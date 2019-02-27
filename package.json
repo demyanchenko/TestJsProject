@@ -2,16 +2,25 @@
   "name": "testproject",
   "version": "1.0.0",
   "description": "Обучение JavaScript в Luxoft",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel src --out-dir dist && webpack"
   },
   "author": "Demyanchenko Alexander",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "eslint": "^5.14.1"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
   }
 }
