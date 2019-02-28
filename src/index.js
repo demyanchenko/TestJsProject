@@ -4,7 +4,8 @@
 // const $ = document.querySelector;
 // $("body").innerHTML += "<span>1 2 3 4 5 Вышел зайчик погулять!</span>";
 
-import insert2Body from './utils';
+//import insert2Body from './utils';
+import readyStedyGo from './game'
 
 const { a: a1, b: { q }, c } = { a: 1, b: { q: 6, w: 9 }, c: 3 };
 
@@ -12,7 +13,10 @@ console.log(a1);
 console.log(c);
 console.log(q);
 
-insert2Body('1 2 3 4 5 Вышел зайчик погулять!;');
+// Запускаем игру Казино
+readyStedyGo();
+
+//insert2Body('1 2 3 4 5 Вышел зайчик погулять!;');
 
 // выполнить функцию по окончанию рендеринга страницы. Полезно вместо window.onLoad
 /* addEventListener("DOMContentLoaded", function (evt){
