@@ -83,13 +83,13 @@ export default function doDrunkard() {
     console.log(`Игрок №2 извлек карту ${toString(player2Card)}`);
 
 
-    const compare1 = compare(player1Card, player2Card);
-    if (compare1 > 0) {
+    const compareResult = compare(player1Card, player2Card);
+    if (compareResult > 0) {
       player1Cards.unshift(player1Card);
       player1Cards.unshift(player2Card);
       winner = 1;
       console.log('Кон выиграл Игрок №1');
-    } else if (compare1 < 0) {
+    } else if (compareResult < 0) {
       player2Cards.unshift(player1Card);
       player2Cards.unshift(player2Card);
       winner = 2;
