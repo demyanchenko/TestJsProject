@@ -8,10 +8,10 @@ globals:
 parserOptions:
   ecmaVersion: 2018
   sourceType: module
-rules: {
-  no-unused-vars: error,
-  spaced-comment: off,
-  no-trailing-spaces: off,
-  linebreak-style: off,
+rules:
+  no-unused-vars: error
+  spaced-comment: off
+  no-trailing-spaces: off
+  linebreak-style: off
   arrow-parens: off
-}
+  object-curly-spacing: off
