@@ -4,8 +4,7 @@ const VELOCITY = 10;
 function rotateBarrel(index, force) {
   // todo: realize it!
   //  Готово.
-  const stopPosition = ((index * force * VELOCITY) % BARREL_ITEMS) + 1;
-  return stopPosition;
+  return VELOCITY * index * force % BARREL_ITEMS;
 }
 
 export default function readyStedyGo() {
@@ -14,11 +13,11 @@ export default function readyStedyGo() {
   const barrel1 = rotateBarrel(1, force);
   const barrel2 = rotateBarrel(2, force);
   const barrel3 = rotateBarrel(3, force);
+  console.log(barrel1, barrel2, barrel3);
 
-  if (barrel1 === barrel2 && barrel2 === barrel3) {
-    console.log('Вы выиграли');
-  } else {
-    console.log('Вы проиграли!');
-  }
-  return 'Результат игры смотри в логах!';
+  return barrel1 === barrel2 && barrel2 === barrel3;
 }
+
+/*// Запускаем игру Казино
+console.log('Результат игры смотри в логах!');
+console.log(readyStedyGo() ? 'Вы выиграли' : 'Вы проиграли!');*/

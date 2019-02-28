@@ -14,7 +14,10 @@ console.log(c);
 console.log(q);
 
 // Запускаем игру Казино
-readyStedyGo();
+console.log('Результат игры смотри в логах!');
+console.log(readyStedyGo() ? 'Вы выиграли' : 'Вы проиграли!');
+
+
 
 //insert2Body('1 2 3 4 5 Вышел зайчик погулять!;');
 

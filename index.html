@@ -7,13 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 <!--    <link rel="stylesheet" href="=/123.css" />-->
-    <script src="/dist/bundle.js" defer="defer"></script>
-    <!-- можно добавить свойства defer="defer" acync="acync" -->
+<!--    <script src="/dist/bundle.js" defer="defer"></script>-->
+<!--    <script src="./node_modules/require.js"></script>-->
+<!--    <script src="/dist/game.mjs" defer="defer"></script>-->
+<!--    <script src="/dist/index.js" defer="defer"></script>-->
+
+    <script type="module">
+        import readyStedyGo from './src/game.mjs';
+        import doDrunkard from './src/drunkard.mjs';
+
+        console.log('Играем в однопукого бандита:');
+        console.log(readyStedyGo() ? 'Вы выиграли' : 'Вы проиграли!');
+
+        console.log('Играем в пьяницу:');
+        console.log(doDrunkard() == 1 ? 'Вы выиграли': 'Вы проиграли!');
+
+
+    </script>
+<!--     можно добавить свойства defer="defer" acync="acync" -->
 
 </head>
 <body>
 
-sdgsadgsdg
+Игра!
 
 </body>
 </html>

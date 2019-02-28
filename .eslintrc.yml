@@ -9,9 +9,15 @@ parserOptions:
   ecmaVersion: 2018
   sourceType: module
 rules:
-  no-unused-vars: error
+  no-unused-vars: off
   spaced-comment: off
   no-trailing-spaces: off
   linebreak-style: off
   arrow-parens: off
   object-curly-spacing: off
+  no-mixed-operators: off
+  no-param-reassign: off
+  no-plusplus: off
+  no-extend-native: off
+  nonblock-statement-body-position: off
+  curly: off
