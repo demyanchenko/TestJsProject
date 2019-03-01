@@ -1,7 +1,7 @@
 import Deck from './cards.mjs'
 
 function compare(player1Card, player2Card) {
-  const number = Deck.value(player1Card) - Deck.value(player2Card);
+  const number = Deck.pip(player1Card) - Deck.pip(player2Card);
   // меняем знак результата, если сошлись "туз" и "6"
   return Math.abs(number) === 8 ? -number : number;
 // return (valuePlayer1Card === 0 && valuePlayer2Card === 8) || valuePlayer1Card > valuePlayer2Card;

@@ -29,5 +29,5 @@ show()
 /* getPromise().then(text => {
    const { id, price } = JSON.parse(text);
    return id + price;
- }).then(value => console.log(value))
+ }).then(pip => console.log(pip))
    .catch(reason => console.log(reason.status));*/

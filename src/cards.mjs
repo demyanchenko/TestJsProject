@@ -33,12 +33,12 @@ export default class Deck {
   }
 
 // Значение карты
-  static value(card) {
+  static pip(card) {
     return card % COUNT_CARDS;
   }
 
   static worth(card) {
-    switch (Deck.value(card)) {
+    switch (Deck.pip(card)) {
       case 0:
         return 6;
       case 1:

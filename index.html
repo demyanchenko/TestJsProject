@@ -6,26 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<!--    <link rel="stylesheet" href="=/123.css" />-->
-<!--    <script src="/dist/bundle.js" defer="defer"></script>-->
-<!--    <script src="./node_modules/require.js"></script>-->
-<!--    <script src="/dist/game.mjs" defer="defer"></script>-->
-<!--    <script src="/dist/index.js" defer="defer"></script>-->
+    <!--    <link rel="stylesheet" href="=/123.css" />-->
+    <!--    <script src="/dist/bundle.js" defer="defer"></script>-->
+    <!--    <script src="./node_modules/require.js"></script>-->
+    <!--    <script src="/dist/game.mjs" defer="defer"></script>-->
+    <!--    <script src="/dist/index.js" defer="defer"></script>-->
 
     <script type="module">
         import readyStedyGo from './src/game.mjs';
         import doDrunkard from './src/drunkard.mjs';
         import doBlackJack from "./src/black-jack.mjs";
 
-        console.log('Играем в однопукого бандита:');
-        console.log(readyStedyGo() ? 'Вы выиграли' : 'Вы проиграли!');
+        // console.log('Играем в однопукого бандита:');
+        // console.log(readyStedyGo() ? 'Вы выиграли' : 'Вы проиграли!');
 
-        console.log('Играем в пьяницу:');
-        console.log(doDrunkard() == 1 ? 'Вы выиграли': 'Вы проиграли!');
-        console.log('Сыграли в Очко (21): ', doBlackJack() > 0 ? 'Вы выиграли': 'Вы проиграли!');
+        // console.log('Играем в пьяницу:');
+        // console.log(doDrunkard() == 1 ? 'Вы выиграли': 'Вы проиграли!');
+        console.log('Играем в Очко:');
+        doBlackJack(result =>
+                console.log('Сыграли в Очко (21): ',
+                        result > 0 ? 'Вы выиграли' : 'Вы проиграли!')
+        )
+        ;
 
     </script>
-<!--     можно добавить свойства defer="defer" acync="acync" -->
+    <!--     можно добавить свойства defer="defer" acync="acync" -->
 
 </head>
 <body>
