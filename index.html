@@ -15,13 +15,14 @@
     <script type="module">
         import readyStedyGo from './src/game.mjs';
         import doDrunkard from './src/drunkard.mjs';
+        import doBlackJack from "./src/black-jack.mjs";
 
         console.log('Играем в однопукого бандита:');
         console.log(readyStedyGo() ? 'Вы выиграли' : 'Вы проиграли!');
 
         console.log('Играем в пьяницу:');
         console.log(doDrunkard() == 1 ? 'Вы выиграли': 'Вы проиграли!');
-
+        console.log('Сыграли в Очко (21): ', doBlackJack() > 0 ? 'Вы выиграли': 'Вы проиграли!');
 
     </script>
 <!--     можно добавить свойства defer="defer" acync="acync" -->
