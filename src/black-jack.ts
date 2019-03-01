@@ -1,4 +1,4 @@
-import Deck from "./cards.mjs";
+import Deck from "./cards";
 
 const BET = 10; // ставка в игре
 const MAX_POINTS = 21;
@@ -91,6 +91,11 @@ function playTime(count, player1Money, player2Money) {
   return [player1Money, player2Money];
 }
 
+/**
+ *
+ * @param callback
+ * @returns {number}
+ */
 export default function doBlackJack(callback) {
 
   let player1Money = 100; // счёт игрока 1

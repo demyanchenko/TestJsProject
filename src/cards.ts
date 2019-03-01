@@ -1,4 +1,4 @@
-import {shuffle} from './utils.mjs';
+import {shuffle} from './utils';
 
 // Мешатель колоды из Utils
 Array.prototype.shuffle = function () {
